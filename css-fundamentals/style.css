@@ -41,10 +41,35 @@ li {
 
 /* combining selectors */
 /* descendant selector */
-footer p {
+/* footer p {
+  font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+/* difference between ID and Class */
+/* not allowed to repeat ID names */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
   font-size: 16px;
 }
 
-article header p {
-  font-style: italic;
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* a small challenge: remove the bullet points */
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
 }
