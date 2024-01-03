@@ -94,3 +94,29 @@ aside {
 body {
   /* background-color: orangered; */
 }
+
+/* pseudo-classes */
+/* .first-li {
+  font-weight: bold;
+} */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* Not in effect */
+/* Because the first child element is not <p> */
+article p:first-child {
+  color: red;
+}
+
+article p:last-child {
+  color: red;
+}
