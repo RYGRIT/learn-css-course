@@ -1,7 +1,14 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+
+  /* border property does not get inherited */
+  border-top: 10px solid #1098ad;
+}
 /* styling text */
 /* 6 CSS properties */
 /* font-size font-family font-style text-transform text-align line-height */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -9,7 +16,7 @@ p,
 li {
   font-family: sans-serif;
   color: #444;
-}
+} */
 
 h1,
 h2,
@@ -158,3 +165,12 @@ a:active {
 footer p {
   color: green;
 } */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+nav {
+  font-size: 18px;
+}
