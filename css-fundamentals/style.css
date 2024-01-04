@@ -141,3 +141,20 @@ a:active {
   font-style: italic;
   text-decoration: none;
 }
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
