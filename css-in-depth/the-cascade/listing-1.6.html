@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    /* The style in ④ is applied to the title */
+    /* The most specific selector here is ④, with one ID, so its color declaration of red is applied to the title.
+       The next specific is ③, with two class names. This would be applied if the ID selector ④ were absent.
+       Selector ③ has a higher specificity than selector ②, despite its length: two classes are more specific than one
+       class. Finally, ① is the least specific, with four element types (that is, tag names) but no IDs or classes.
+    */
+    /* ① */
+    html body header h1 {
+      color: blue;
+    }
+
+    /* ② */
+    body header.page-header h1 {
+      color: orange;
+    }
+
+    /* ③ */
+    .page-header .title {
+      color: green;
+    }
+
+    /* ④ */
+    #page-title {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1 id="page-title" class="title">Wombat Coffee Roasters</h1>
+    <nav>
+      <ul id="main-nav" class="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/coffees">Coffees</a></li>
+        <li><a href="/brewers">Brewers</a></li>
+        <li><a href="/specials" class="featured">Specials</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
