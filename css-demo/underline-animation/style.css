@@ -1,0 +1,15 @@
+.title {
+  color: #333;
+  line-height: 1.5;
+}
+
+.title span {
+  background: linear-gradient(to right, #ff5f57, #28c840) no-repeat right bottom;
+  background-size: 0 2px;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.title span:hover {
+  background-position: left bottom;
+  background-size: 100% 2px;
+}
