@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 40px;
+      }
+
+      .box {
+        display: inline-block;
+        width: 200px;
+        border: 2px solid black;
+        margin-left: -60px;
+
+        line-height: 200px;
+        text-align: center;
+        vertical-align: top;
+        background-color: #ea5;
+      }
+
+      .one {
+        margin-left: 0;
+      }
+
+      .three {
+        margin-top: 60px;
+      }
+
+      .positioned {
+        position: relative;
+        z-index: 1;
+
+        background-color: #5ae;
+      }
+
+      .two {
+        margin-top: 30px;
+        z-index: 3;
+      }
+
+      .absolute {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        z-index: 100;
+
+        height: 2em;
+        padding: 1em;
+        border: 2px dashed #888;
+
+        line-height: initial;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box one positioned">
+      one
+      <div class="absolute">nested</div>
+    </div>
+    <div class="box two positioned">two</div>
+    <div class="box three">three</div>
+  </body>
+</html>
