@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Layouts 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="form">
+    <label for="justify-content" class="toggle">
+      <span class="toggle__label">justify-content: center;</span>
+      <input type="checkbox" class="toggle__element" id="justify-content" role="switch" checked>
+      <!-- aria-hidden 属性可以用来控制一系列可访问 API 中的非交互内容的显示或隐藏。 -->
+      <!-- aria-hidden="true" 会把该元素和它的所有子元素从无障碍树上移除。 -->
+      <div class="toggle__decor" aria-hidden="true">
+        <div class="toggle__thumb"></div>
+      </div>
+    </label>
+    <label for="align-items" class="toggle">
+      <span class="toggle__label">align-items: center;</span>
+      <input type="checkbox" class="toggle__element" id="align-items" role="switch" checked>
+      <div class="toggle__decor" aria-hidden="true">
+        <div class="toggle__thumb"></div>
+      </div>
+    </label>
+  </div>
+
+  <div class="wrapper">
+    <div class="container container--single">
+      <div class="container__img">
+        <img src="../images/avatar.jpeg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container container--multiple">
+      <div class="container__img">
+        <img src="../images/avatar.jpeg" alt="">
+      </div>
+      <h3>10 Flexbox classic layouts</h3>
+      <p>Learn modern web layout booklets</p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
