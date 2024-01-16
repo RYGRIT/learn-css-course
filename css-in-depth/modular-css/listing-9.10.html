@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .media {
+        padding: 1.5em;
+        border-radius: 0.5em;
+
+        background-color: #eee;
+      }
+
+      .media::after {
+        display: block;
+        clear: both;
+
+        content: "";
+      }
+
+      .media--right > .media__image {
+        float: right;
+      }
+
+      .media__image {
+        float: left;
+        margin-right: 1.5em;
+      }
+
+      .media__body {
+        margin-top: 0;
+        overflow: auto;
+      }
+
+      .media__body > h4 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="media media--right">
+      <img src="runner.png" alt="" class="media__image" />
+      <div class="media__body">
+        <h4>Strength</h4>
+        <p>
+          Strength training is an important part of injury prevention. Focus on
+          your core&mdash; especially your abs and glutes
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
