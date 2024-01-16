@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+      --brand-green: hsl(161.94deg 86.92% 20.98%);
+      --dark-green: hsl(161.61deg 88.39% 30.39%);
+      --medium-green: hsl(162.25deg 72.53% 45.69%);
+      --text-color: hsl(210deg 10.81% 14.51%);
+      --gray: hsl(210deg 7.08% 55.69%);
+      --light-gray: hsl(210deg 16.67% 95.29%);
+      --extra-light-gray: hsl(210deg 16.67% 97.65%);
+      --white: hsl(0deg 0% 100%);
+      --red: hsl(341.94deg, 76.92%, 40.98%);
+
+      box-sizing: border-box;
+      color: var(--text-color);
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      background-color: var(--extra-light-gray);
+
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Georgia, serif;
+    }
+
+    a {
+      color: var(--medium-green)
+    }
+
+    a:visited {
+      color: var(--brand-green);
+    }
+
+    a:hover {
+      color: var(--brand-green);
+    }
+
+    a:active {
+      color: var(--red);
+    }
+
+    .nav-container {
+      background-color: var(--medium-green);
+    }
+
+    .nav-container__inner {
+      display: flex;
+      justify-content: space-between;
+
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: .625em 0;
+    }
+
+    .home-link {
+      color: var(--text-color);
+      font-size: 1.6rem;
+      font-family: Georgia, serif;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .top-nav {
+      display: flex;
+
+      margin: 0;
+
+      list-style-type: none;
+    }
+
+    .top-nav>li+li {
+      margin-left: .625em;
+    }
+
+    .top-nav a {
+      display: block;
+      padding: .3em 1.25em;
+      border-radius: 3px;
+      background: var(--brand-green);
+
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    .top-nav a:hover {
+      background-color: var(--dark-green);
+    }
+
+    .top-nav__featured>a {
+      color: var(--brand-green);
+      background-color: var(--white);
+    }
+
+    .top-nav__featured>a:hover {
+      color: var(--medium-green);
+      background-color: var(--white);
+    }
+
+    .hero {
+      margin-bottom: 2.5rem;
+      background: url(images/collaboration.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .hero__inner {
+      max-width: 1080px;
+      padding: 50px 0 200px;
+      margin: 0 auto;
+
+      text-align: right;
+    }
+
+    .hero h2 {
+      font-size: 1.95rem;
+    }
+
+    .button {
+      display: inline-block;
+      padding: .4em 1em;
+      border: 2px solid var(--brand-green);
+      border-radius: .2em;
+
+      color: var(--brand-green);
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      background-color: var(--dark-green);
+      color: var(--white);
+    }
+
+    .button-cta {
+      padding: .6em 1em;
+      background-color: var(--brand-green);
+      border: none;
+
+      color: var(--white);
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+
+    .tile-row {
+      display: flex;
+    }
+
+    .tile-row>* {
+      flex: 1;
+    }
+
+    .tile {
+      background-color: var(--white);
+      border-radius: .3em;
+    }
+
+    .page-footer {
+      padding: 1em 0;
+      margin-top: 3em;
+      background-color: var(--light-gray);
+
+      color: var(--gray);
+    }
+
+    .page-footer__inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav-container">
+    <div class="nav-container__inner">
+      <a href="/" class="home-link">Ink</a>
+      <ul class="top-nav">
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/support">Support</a></li>
+        <li class="top-nav__featured"><a href="/login">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="hero__inner">
+      <h2>Team collaboration done right</h2>
+      <a href="/sign-up" class="button button--cta">Get started</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tile-row">
+      <div class="tile">
+        <h4>Work together, even if you're apart</h4>
+        <p>Organize your team conversations into threads. Collaborate together on documents in real-time. Use
+          face-to-face <a href="/features/video-calling">video calls</a> when typing just won't do.</p>
+        <a href="/collaboration" class="button">Read more</a>
+      </div>
+
+      <div class="tile">
+        <h4>Take it with you</h4>
+        <p>Ink is available on a wide array of devices, so you can work from anywhere:</p>
+        <ul class="tag-list">
+          <li>Web</li>
+          <li>iOS</li>
+          <li>Android</li>
+          <li>Windows Phone</li>
+        </ul>
+        <a href="/supported-devices" class="button">Read more</a>
+      </div>
+
+      <div class="tile">
+        <h4>Priced right</h4>
+        <p>Whether you work on a team of three or a three hundred, you'll find our tiered pricing reasonable at every
+          level.</p>
+        <a href="/pricing" class="button">Read more</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
