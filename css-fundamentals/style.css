@@ -82,6 +82,13 @@ li {
   font-style: italic;
 } */
 
+.container {
+  max-width: 1080px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
 /* difference between ID and Class */
 /* not allowed to repeat ID names */
 #author {
