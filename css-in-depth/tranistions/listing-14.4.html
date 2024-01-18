@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        height: 30px;
+      }
+
+      .box {
+        position: absolute;
+        left: 0;
+
+        width: 30px;
+        height: 30px;
+
+        background-color: hsl(130deg, 50%, 50%);
+        transition: all 1s ease-in-out;
+      }
+
+      .container:hover .box {
+        left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
