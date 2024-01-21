@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Raleway" />
+  <title>The Yolk Factory</title>
+  <style>
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    ::before,
+    ::after {
+      box-sizing: inherit;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+
+      background-color: hsl(200, 80%, 30%);
+      background-image: radial-gradient(hsl(200, 80%, 30%),
+          hsl(210, 80%, 20%));
+
+      color: white;
+      font-family: Raleway, Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: "Alfa Slab One", serif;
+      font-weight: 400;
+    }
+
+    main {
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .page-header {
+      padding: 1rem;
+      margin: 0;
+    }
+
+    @media (min-width: 30em) {
+      .page-header {
+        padding: 2rem 2rem 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="page-header">The Yold Factory</h1>
+  </header>
+
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li>
+        <a href="/">
+          <img src="images/home.svg" alt="" class="nav-links__icon" />
+          <span class="nav-links__label">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="/events">
+          <img src="images/calendar.svg" alt="" class="nav-links__icon" />
+          <span class="nav-links__label">Events</span>
+        </a>
+      </li>
+      <li>
+        <a href="/members">
+          <img src="images/members.svg" alt="" class="nav-links__icon" />
+          <span class="nav-links__label">Members</span>
+        </a>
+      </li>
+      <li>
+        <a href="/about">
+          <img src="images/star.svg" alt="" class="nav-links__icon" />
+          <span class="nav-links__label">About</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+
+</html>
